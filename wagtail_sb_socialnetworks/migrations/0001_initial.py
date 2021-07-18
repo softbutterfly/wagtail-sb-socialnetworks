@@ -82,7 +82,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         to="wagtail_sb_socialnetworks.socialnetwork",
-                        verbose_name="Social Network",
+                        verbose_name="Social network",
                     ),
                 ),
             ],

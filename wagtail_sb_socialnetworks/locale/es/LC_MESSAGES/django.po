@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-17 22:37-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:19
+msgid "Name"
+msgstr "Nombre"
+
+#: models.py:24
+msgid "Icon"
+msgstr "Icono"
+
+#: models.py:34 models.py:40 models.py:51
+msgid "Social network"
+msgstr "Red social"
+
+#: models.py:41
+msgid "Social networks"
+msgstr "Redes social"
+
+#: models.py:55
+msgid "Profile URL"
+msgstr "URL de perfil"
+
+#: models.py:65 models.py:71 models.py:98
+msgid "Social network profile"
+msgstr "Perfil de red social"
+
+#: models.py:72 models.py:81
+msgid "Social network profiles"
+msgstr "Perfiles de redes social"
+
+#: models.py:91
+msgid "Site settings"
+msgstr "Configuración del sitio"

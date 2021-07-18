@@ -31,7 +31,7 @@ class SocialNetwork(models.Model):
                 FieldPanel("name"),
                 ImageChooserPanel("icon"),
             ],
-            heading=_("Social Network"),
+            heading=_("Social network"),
         )
     ]
 
@@ -48,7 +48,7 @@ class SocialNetwork(models.Model):
 class SocialNetworkProfile(models.Model):
     social_network = models.ForeignKey(
         "wagtail_sb_socialnetworks.SocialNetwork",
-        verbose_name=_("Social Network"),
+        verbose_name=_("Social network"),
         on_delete=models.CASCADE,
     )
     profile_url = models.URLField(
@@ -62,7 +62,7 @@ class SocialNetworkProfile(models.Model):
                 SnippetChooserPanel("social_network"),
                 FieldPanel("profile_url"),
             ],
-            heading=_("Social Network Profile"),
+            heading=_("Social network profile"),
         )
     ]
 
@@ -78,7 +78,7 @@ class SocialNetworkProfile(models.Model):
 @register_setting
 class SocialNetworkSettings(ClusterableModel, BaseSetting):
     panels = [
-        InlinePanel("site_socialnetworks", label=_("Social Network Profiles")),
+        InlinePanel("site_socialnetworks", label=_("Social network profiles")),
     ]
 
     class Meta:

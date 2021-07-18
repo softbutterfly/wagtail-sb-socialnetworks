@@ -1,3 +1,4 @@
 ### Unpublished
 
-* Social network for wagtail site settings
+* Add Social network management with wagtail site settings
+* Add Spanish translations
