@@ -41,7 +41,7 @@ search = 'archive/v{current_version}.tar.gz'
 
 [[before_commit]]
 name = "check changelog"
-cmd = "grep -q {new_version} Changelog.rst"
+cmd = "echo {current_version} && grep -q {new_version} Changelog.rst"
 
 # Or run some commands after the git tag and the branch
 # have been pushed:

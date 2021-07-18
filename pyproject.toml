@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wagtail-sb-socialnetworks"
-version = "0.1.0"
+version = "0.0.0"
 description = "social Networks settings for wagtail sites."
 authors = [
   "SoftButterfly Development Team <dev@softbutterfly.io>",
