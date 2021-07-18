@@ -7,5 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [new_version] - 2021-07-18
+
 * Added spanish translations
 * Added social network management with wagtail site settings
