@@ -6,8 +6,8 @@
 ![PyPI - MIT License](https://img.shields.io/pypi/l/wagtail-sb-socialnetworks)
 
 [![Build Status](https://www.travis-ci.org/softbutterfly/wagtail-sb-socialnetworks.svg?branch=develop)](https://www.travis-ci.org/softbutterfly/wagtail-sb-socialnetworks)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9ed3b8725e094a648b38b96a3acdc1eb)](https://www.codacy.com/gh/softbutterfly/wagtail-sb-socialnetworks/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=softbutterfly/wagtail-sb-socialnetworks&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/9ed3b8725e094a648b38b96a3acdc1eb)](https://www.codacy.com/gh/softbutterfly/wagtail-sb-socialnetworks/dashboard?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/wagtail-sb-socialnetworks&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3d703e48c1e44e9b830da5026f07c52d)](https://www.codacy.com/gh/softbutterfly/wagtail-sb-socialnetworks/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=softbutterfly/wagtail-sb-socialnetworks&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/3d703e48c1e44e9b830da5026f07c52d)](https://www.codacy.com/gh/softbutterfly/wagtail-sb-socialnetworks/dashboard?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/wagtail-sb-socialnetworks&utm_campaign=Badge_Coverage)
 [![codecov](https://codecov.io/gh/softbutterfly/wagtail-sb-socialnetworks/branch/master/graph/badge.svg?token=pbqXUUOu1F)](https://codecov.io/gh/softbutterfly/wagtail-sb-socialnetworks)
 [![Requirements Status](https://requires.io/github/softbutterfly/wagtail-sb-socialnetworks/requirements.svg?branch=master)](https://requires.io/github/softbutterfly/wagtail-sb-socialnetworks/requirements/?branch=master)
 
