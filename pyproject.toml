@@ -32,7 +32,7 @@ include = [
 ]
 
 [tool.poetry.urls]
-"Download" = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/archive/0.0.0.tar.gz"
+"Download" = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/archive/v0.0.0.tar.gz"
 "Bug Tracker" = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/issues"
 
 
