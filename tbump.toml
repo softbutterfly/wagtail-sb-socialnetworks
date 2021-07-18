@@ -40,7 +40,11 @@ search = 'v{current_version}.tar.gz'
 # and before the git commit is made
 [[before_commit]]
 name = "Update chage log"
-cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [0.1.0] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
+cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [new_version] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
+
+[[before_commit]]
+name = "Update chage log"
+cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\\1, \\2, \\3)/g') > wagtail_sb_socialnetworks/version.py"
 
 # Or run some commands after the git tag and the branch
 # have been pushed:
