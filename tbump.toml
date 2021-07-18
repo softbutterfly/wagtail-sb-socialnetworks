@@ -39,12 +39,8 @@ search = 'v{current_version}.tar.gz'
 # run after the files have been patched
 # and before the git commit is made
 [[before_commit]]
-name = "check changelog"
-cmd = "grep -q {new_version} CHANGELOG.md"
-
-[[before_commit]]
-name = "check changelog"
-cmd = "grep -q {new_version} CHANGELOG.md"
+name = "Update chage log"
+cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [0.1.0] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
 
 # Or run some commands after the git tag and the branch
 # have been pushed:
