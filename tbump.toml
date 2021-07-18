@@ -40,7 +40,7 @@ search = 'v{current_version}.tar.gz'
 # and before the git commit is made
 [[before_commit]]
 name = "Update chage log"
-cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [new_version] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
+cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [{new_version}] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
 
 [[before_commit]]
 name = "Update chage log"
