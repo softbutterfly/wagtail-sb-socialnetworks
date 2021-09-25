@@ -1,4 +1,3 @@
-# Uncomment this if your project is hosted on GitHub:
 github_url = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/"
 
 [version]
@@ -24,9 +23,6 @@ regex = '''
 message_template = "Bump to {new_version}"
 tag_template = "v{new_version}"
 
-# For each file to patch, add a [[file]] config
-# section containing the path of the file, relative to the
-# tbump.toml location.
 [[file]]
 src = 'pyproject.toml'
 search = 'version = "{current_version}"'
@@ -35,19 +31,14 @@ search = 'version = "{current_version}"'
 src = 'pyproject.toml'
 search = 'v{current_version}.tar.gz'
 
-# You can specify a list of commands to
-# run after the files have been patched
-# and before the git commit is made
 [[before_commit]]
-name = "Update chage log"
+name = "Update changelog"
 cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [{new_version}] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
 
 [[before_commit]]
-name = "Update chage log"
+name = "Update version.py"
 cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\\1, \\2, \\3)/g') > wagtail_sb_socialnetworks/version.py"
 
-# Or run some commands after the git tag and the branch
-# have been pushed:
 [[after_push]]
 name = "Build package"
 cmd = "poetry build"
