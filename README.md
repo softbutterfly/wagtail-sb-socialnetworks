@@ -17,7 +17,7 @@ Wagtail package to manage sites social network profiles.
 
 ## Requirements
 
-- Python 3.6, 3.7, 3.8, 3.9
+- Python 3.8, 3.9, 3.10
 
 ## Install
 
