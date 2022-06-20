@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.3.0] - 2022-06-19
+
 ## [0.2.0] - 2022-05-17
 
 * Drop support for Python 3.6
