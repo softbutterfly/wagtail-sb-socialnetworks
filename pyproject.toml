@@ -13,7 +13,8 @@ repository = "https://github.com/softbutterfly/wagtail-sb-socialnetworks"
 documentation = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/wiki"
 keywords = ["Softbutterfly", "Django", "Migrations"]
 classifiers = [
-  "Development Status :: 3 - Alpha",
+  "Development Status :: 4 - Beta",
+  "Environment :: Web Environment",
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
@@ -23,7 +24,7 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 packages = [
-    { include = "wagtail_sb_socialnetworks" }
+    { include = "wagtail_sb_socialnetworks", from = "src" }
 ]
 include = [
   "LICENSE.txt",
