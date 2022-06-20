@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wagtail-sb-socialnetworks"
-version = "0.2.0"
+version = "0.3.0"
 description = "Social Networks settings for wagtail sites."
 authors = [
   "SoftButterfly Development Team <dev@softbutterfly.io>",
@@ -13,7 +13,8 @@ repository = "https://github.com/softbutterfly/wagtail-sb-socialnetworks"
 documentation = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/wiki"
 keywords = ["Softbutterfly", "Django", "Migrations"]
 classifiers = [
-  "Development Status :: 3 - Alpha",
+  "Development Status :: 4 - Beta",
+  "Environment :: Web Environment",
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
@@ -23,7 +24,7 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 packages = [
-    { include = "wagtail_sb_socialnetworks" }
+    { include = "wagtail_sb_socialnetworks", from = "src" }
 ]
 include = [
   "LICENSE.txt",
@@ -31,7 +32,7 @@ include = [
 ]
 
 [tool.poetry.urls]
-"Download" = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/archive/v0.2.0.tar.gz"
+"Download" = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/archive/v0.3.0.tar.gz"
 "Bug Tracker" = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/issues"
 
 

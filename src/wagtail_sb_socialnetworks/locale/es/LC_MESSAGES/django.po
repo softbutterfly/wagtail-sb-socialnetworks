@@ -32,7 +32,7 @@ msgstr "Red social"
 
 #: models.py:41
 msgid "Social networks"
-msgstr "Redes social"
+msgstr "Redes sociales"
 
 #: models.py:55
 msgid "Profile URL"
@@ -44,7 +44,7 @@ msgstr "Perfil de red social"
 
 #: models.py:72 models.py:81
 msgid "Social network profiles"
-msgstr "Perfiles de redes social"
+msgstr "Perfiles de redes sociales"
 
 #: models.py:91
 msgid "Site settings"

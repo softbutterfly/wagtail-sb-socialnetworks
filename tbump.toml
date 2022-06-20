@@ -1,7 +1,7 @@
 github_url = "https://github.com/softbutterfly/wagtail-sb-socialnetworks/"
 
 [version]
-current = "0.2.0"
+current = "0.3.0"
 
 # Example of a semver regexp.
 # Make sure this matches current_version before
@@ -37,7 +37,7 @@ cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [{new_version}] - 
 
 [[before_commit]]
 name = "Update version.py"
-cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\\1, \\2, \\3)/g') > wagtail_sb_socialnetworks/version.py"
+cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\\1, \\2, \\3)/g') > src/wagtail_sb_socialnetworks/version.py"
 
 [[after_push]]
 name = "Build package"
