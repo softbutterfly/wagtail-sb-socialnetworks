@@ -1,4 +1,4 @@
-![Community project](https://raw.githubusercontent.com/softbutterfly/wagtail-sb-socialnetworks/master/resources/softbutterfly-open-source-community-project.png)
+![Community-Project](https://gitlab.com/softbutterfly/open-source/open-source-office/-/raw/master/banners/softbutterfly-open-source--banner--community-project.png)
 
 ![PyPI - Supported versions](https://img.shields.io/pypi/pyversions/wagtail-sb-socialnetworks)
 ![PyPI - Package version](https://img.shields.io/pypi/v/wagtail-sb-socialnetworks)
