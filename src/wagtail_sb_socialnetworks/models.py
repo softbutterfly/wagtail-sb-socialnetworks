@@ -116,7 +116,7 @@ class SocialNetworkSettings(ClusterableModel, BaseSetting):
 
 
 class SiteSocialNetworkProfile(Orderable):
-    sitesettings = ParentalKey(
+    site_settings = ParentalKey(
         "wagtail_sb_socialnetworks.SocialNetworkSettings",
         verbose_name=_("Site settings"),
         on_delete=models.CASCADE,
@@ -132,9 +132,9 @@ class SiteSocialNetworkProfile(Orderable):
     )
 
     panels = [
-        FieldPanel("sitesettings"),
+        FieldPanel("site_settings"),
         SnippetChooserPanel("profile"),
     ]
 
     class Meta:
-        unique_together = ("sitesettings", "profile")
+        unique_together = ("site_settings", "profile")
