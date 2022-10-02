@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2022-10-02
+
 * Update dependencies
 * Add support for wagtail 4.0
 * Add demo project
