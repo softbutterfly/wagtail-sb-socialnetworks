@@ -1,14 +1,33 @@
 from django.db import models
+from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from modelcluster.fields import ParentalKey
 from modelcluster.models import ClusterableModel
-from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
-from wagtail.contrib.settings.models import BaseSetting, register_setting
+from wagtail.contrib.settings.models import register_setting
 from wagtail.core.models import Orderable
 from wagtail.images import get_image_model_string
-from wagtail.images.edit_handlers import ImageChooserPanel
-from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.snippets.models import register_snippet
+
+try:
+    from wagtail.contrib.settings.models import BaseSiteSetting
+
+    class BaseSetting(BaseSiteSetting):
+        class Meta:
+            abstract = True
+
+except ImportError:
+    from wagtail.contrib.settings.models import BaseSetting  # type: ignore
+
+try:
+    from wagtail.admin.panels import FieldPanel, InlinePanel, MultiFieldPanel
+
+    ImageChooserPanel = FieldPanel
+    SnippetChooserPanel = FieldPanel
+
+except ImportError:
+    from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
+    from wagtail.images.edit_handlers import ImageChooserPanel  # type: ignore
+    from wagtail.snippets.edit_handlers import SnippetChooserPanel  # type: ignore
 
 IMAGE_MODEL = get_image_model_string()
 
@@ -19,6 +38,7 @@ class SocialNetwork(models.Model):
         verbose_name=_("Name"),
         max_length=63,
     )
+
     icon = models.ForeignKey(
         IMAGE_MODEL,
         verbose_name=_("Icon"),
@@ -43,6 +63,10 @@ class SocialNetwork(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def slug(self):
+        return slugify(self.name)
+
 
 @register_snippet
 class SocialNetworkProfile(models.Model):
@@ -51,6 +75,7 @@ class SocialNetworkProfile(models.Model):
         verbose_name=_("Social network"),
         on_delete=models.CASCADE,
     )
+
     profile_url = models.URLField(
         verbose_name=_("Profile URL"),
         max_length=200,
@@ -78,7 +103,10 @@ class SocialNetworkProfile(models.Model):
 @register_setting
 class SocialNetworkSettings(ClusterableModel, BaseSetting):
     panels = [
-        InlinePanel("site_socialnetworks", label=_("Social network profiles")),
+        InlinePanel(
+            "site_socialnetworks",
+            label=_("Social network profiles"),
+        ),
     ]
 
     class Meta:
@@ -93,6 +121,7 @@ class SiteSocialNetworkProfile(Orderable):
         related_name="site_socialnetworks",
         related_query_name="site_socialnetwork",
     )
+
     profile = models.ForeignKey(
         "wagtail_sb_socialnetworks.SocialNetworkProfile",
         verbose_name=_("Social network profile"),
