@@ -12,6 +12,8 @@
 *.ipynb*
 *.egg*
 *.sqlite*
+demoproject/media/*
+demoproject/static/*
 coverage.*
 example
 legacy
