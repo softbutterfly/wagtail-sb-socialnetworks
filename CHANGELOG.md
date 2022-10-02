@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+* Update dependencies
+* Add support for wagtail 4.0
+* Add demo project
+* Make icon field optional for SocialNetwork model
+* Rename sitesettings to site_settings for SiteSocialNetworkProfile model
+
 ## [0.3.0] - 2022-06-19
 
 ## [0.2.0] - 2022-05-17
