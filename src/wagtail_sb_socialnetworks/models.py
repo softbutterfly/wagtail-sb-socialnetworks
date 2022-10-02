@@ -43,6 +43,8 @@ class SocialNetwork(models.Model):
         IMAGE_MODEL,
         verbose_name=_("Icon"),
         on_delete=models.CASCADE,
+        null=True,
+        blank=True,
     )
 
     panels = [
